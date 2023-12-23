@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import * as pathName from "./paths";
 const AxiosExample = lazy(() => import("./../pages/AxiosExample/AxiosExample"));
 const FetchExample = lazy(() => import("./../pages/FetchExample/FetchExample"));
-const GraphQlExample = lazy(() => import("./../pages/GraphQlExample/GraphQlExample"));
 
 const AppRoutes = () => {
   return (
@@ -21,14 +20,6 @@ const AppRoutes = () => {
         element={
           <Suspense fallback={<div>Loading...</div>}>
             <FetchExample />
-          </Suspense>
-        }
-      />
-      <Route
-        path={pathName.graphQlExample}
-        element={
-          <Suspense fallback={<div>Loading...</div>}>
-            <GraphQlExample />
           </Suspense>
         }
       />

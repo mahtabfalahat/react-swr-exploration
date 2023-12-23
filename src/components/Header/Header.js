@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { axiosExample, fetchExample, graphQlExample } from "./../../routes/paths";
+import { axiosExample, fetchExample } from "./../../routes/paths";
 import "./style.css";
 
 const Header = () => {
@@ -13,9 +13,6 @@ const Header = () => {
           </li>
           <li>
             <Link to={axiosExample}>axios example</Link>
-          </li>
-          <li>
-            <Link to={graphQlExample}>graph ql example</Link>
           </li>
         </ul>
       </nav>
